@@ -1,0 +1,50 @@
+/* archives popup */
+* html #popup:hover #menu li a span {
+	cursor: pointer;
+	right: 10px;
+}
+#menu {
+	display: none;
+}
+#popup {
+	cursor: pointer;
+	height: 55px;
+	position: absolute;
+	right: 4px;
+	top: 4px;
+	width: 55px;
+}
+#popup:hover #menu {
+	background: url(../images/news_archive.jpg) #99A368 no-repeat 0 0;
+	border: 1px solid #C2C099;
+	cursor: default;
+	display: block;
+	height: 156px;
+	padding: 30px 10px 0;
+	position: absolute;
+	right: 45px;
+	top: 23px;
+	width: 256px;
+	z-index: 50;
+}
+#popup:hover #menu li {
+	margin: 5px 0;
+	padding: 2px 0;
+}
+#popup:hover #menu li a {
+	color: #FDFFF2;
+	display: block;
+	font-weight: bold;
+	position: relative;
+	text-decoration: none;
+}
+#popup:hover #menu li a span {
+	position: absolute;
+	right: 0;
+}
+#popup:hover #menu li a:hover {
+	color: #F8D565;
+}
+#popup:hover #menu li a:hover span {
+	border-bottom: 1px solid #FDFFF2;
+}
