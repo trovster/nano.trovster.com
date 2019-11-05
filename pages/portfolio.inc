@@ -28,7 +28,7 @@ while($portfolio_list_row = mysqli_fetch_assoc($portfolio_list))
 		$active = ' id="active"';
 	}
 	
-	echo '<li'.$active.'><a href="portfolio/'.$headline_url.'/" title="'.ucwords($headline).'"><span></span>'.$id.'</a></li>'."\n";
+	echo '<li'.$active.'><a href="/portfolio/'.$headline_url.'/" title="'.ucwords($headline).'"><span></span>'.$id.'</a></li>'."\n";
 }
 echo '</ul>'."\n\n";
 
@@ -67,6 +67,10 @@ while($portfolio_row = mysqli_fetch_assoc($portfolio))
 			{
 				$url  = 'http://'.$url;
 			}
+			else
+			{
+				$url = '/' . $url;
+			}
 			$link = '<a href="'.$url.'" title="'.ucwords($headline).'">';
 			$link_end = '</a>';
 		}
@@ -74,7 +78,7 @@ while($portfolio_row = mysqli_fetch_assoc($portfolio))
 			$link = '';
 			$link_end = '';
 		}
-		echo $link.'<img src="'.$image_url.'" alt="'.$alt.'" height="'.$height.'px" width="'.$width.'px">'.$link_end."\n";
+		echo $link.'<img src="/'.$image_url.'" alt="'.$alt.'" height="'.$height.'px" width="'.$width.'px">'.$link_end."\n";
 	}
 }
 

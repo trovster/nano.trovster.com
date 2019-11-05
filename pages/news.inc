@@ -27,7 +27,7 @@ if($sql_news && mysqli_num_rows($sql_news) != 0)
 		{
 			$image_url = 'images/news/'.$image;
 			list($width, $height) = getimagesize($image_url);
-			echo '<img src="'.$image_url.'" alt="'.$alt.'" height="'.$height.'px" width="'.$width.'px">'."\n";
+			echo '<img src="/'.$image_url.'" alt="'.$alt.'" height="'.$height.'px" width="'.$width.'px">'."\n";
 		}
 		echo '<p>'.$entry.'</p>'."\n";
 		echo '</div>'."\n\n";
@@ -57,7 +57,7 @@ if($section=='news')
 		extract($news_archives_row);
 		$date = date('Y-m-d',strtotime($date));
 		$title_output = ucwords($title);
-		echo '<li><a href="'.$date.'" title="View the '.$title_output.' article">'.$title_output.' <span>'.$date.'</span></a></li>'."\n";
+		echo '<li><a href="/'.$date.'" title="View the '.$title_output.' article">'.$title_output.' <span>'.$date.'</span></a></li>'."\n";
 	}
 
 	echo '</ul>'."\n";

@@ -10,8 +10,16 @@ You can setup the site using [Docker](https://www.docker.com);
 
     $ git clone https://github.com/trovster/nano.trovster.com.git nano
     $ cd nano
-    $ sh start.sh --build
+    $ npm install
+    $ npm run start -- --build
 
 To stop the Docker container run the following;
 
-    $ sh stop.sh
+    $ npm run stop
+
+## Deployment
+
+To deploy the site via GitHub pages, run the following;
+
+    $ npm run build
+    $ npm run deploy

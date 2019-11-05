@@ -52,30 +52,23 @@ if(isset($_GET['section']))
 	$page_title = $section_output.$at.$page_title;
 }
 echo '<title>'.$page_title.'</title>'."\n\n";
-
-if(stristr($_SERVER['HTTP_HOST'],'trov.ath.cx') || stristr($_SERVER['HTTP_HOST'],'trovster.ath.cx')) {
-	echo '<base href="http://'.$_SERVER['HTTP_HOST'].'/nano/">'."\n\n";
-}
-else {
-	echo '<base href="http://'.$_SERVER['HTTP_HOST'].'/">'."\n\n";
-}
 ?>
-<link rel="stylesheet" type="text/css" media="screen" href="styles/screen.css">
+<link rel="stylesheet" type="text/css" media="screen" href="/styles/screen.css">
 
 <!-- fix for Internet Explorer's lack of support for alpha transparency -->
 <!--[if IE]>
 <style type="text/css" media="screen">
 body {
-behavior: url(scripts/csshover.htc);	
+behavior: url(/scripts/csshover.htc);	
 }
 img {
-behavior: url(scripts/pngbehavior.htc);
+behavior: url(/scripts/pngbehavior.htc);
 }
 </style>
 <![endif]-->
-<script type="text/javascript" src="scripts/productmouseover.js"></script>
+<script type="text/javascript" src="/scripts/productmouseover.js"></script>
 
-<link rel="shortcut icon" href="favicon.ico">
+<link rel="shortcut icon" href="/favicon.ico">
 
 </head>
 
@@ -88,11 +81,11 @@ echo '<body id="page-'.$section.$products_title.'">'."\n\n";
 
 <div id="navigation">
 <ul>
-<li id="news"><a href="" title="Hello, nice to meet you at NANO"><span></span>News</a></li>
-<li id="about"><a href="about/" title="Specialists in 3D internet"><span></span>About Us</a></li>
-<li id="products"><a href="products/" title="How can we help you?"><span></span>Products</a></li>
-<li id="portfolio"><a href="portfolio/" title="We work for your success"><span></span>Portfolio</a></li>
-<li id="contact"><a href="contact/" title="We are happy to see you"><span></span>Contact</a></li>
+<li id="news"><a href="/" title="Hello, nice to meet you at NANO"><span></span>News</a></li>
+<li id="about"><a href="/about/" title="Specialists in 3D internet"><span></span>About Us</a></li>
+<li id="products"><a href="/products/" title="How can we help you?"><span></span>Products</a></li>
+<li id="portfolio"><a href="/portfolio/" title="We work for your success"><span></span>Portfolio</a></li>
+<li id="contact"><a href="/contact/" title="We are happy to see you"><span></span>Contact</a></li>
 </ul>
 </div>
 
