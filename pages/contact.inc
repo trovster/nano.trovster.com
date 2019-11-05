@@ -156,7 +156,7 @@ if(!isset($error_array) || !empty($error_array))
 	
 	if(!isset($_POST['submit']))
 	{
-		//$value_output_array = array('Full Name','Valid email address','Title of message','Message contents','Not required');
+		$value_output_array = array('','','','','');
 	}
 	
 	//onfocus="if(this.value==\'Full Name\'){this.value=\'\'}"

@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+    app:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: trovster_nano:latest
+        container_name: trovster_nano
+        ports:
+            - "8001:80"
+        volumes:
+            - ./:/var/www/html

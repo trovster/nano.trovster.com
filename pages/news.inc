@@ -11,7 +11,7 @@ else
 	$sql_news = mysqli_query($dbase, "SELECT id,title,entry,date,image,alt FROM news ORDER BY date DESC LIMIT 0, 2");
 }
 
-if(mysqli_num_rows($sql_news)!=0)
+if($sql_news && mysqli_num_rows($sql_news) != 0)
 {
 	while($news_row = mysqli_fetch_assoc($sql_news))
 	{

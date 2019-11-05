@@ -5,7 +5,7 @@ require_once('db.inc.php');
 $section = 'news';
 if(isset($_GET['section']))
 {
-	$section = $_GET['section'];
+	$section = trim($_GET['section'], '/');
 }
 
 $products = '';
