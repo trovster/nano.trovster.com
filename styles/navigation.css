@@ -1,0 +1,130 @@
+/* the navigation */
+#navigation ul {
+	background: url(../images/logo_nano.gif) #7E8750 no-repeat 50% 86%;
+	border: 6px solid #FFFFFF;
+	height: 283px;
+	padding: 30px 0 0;
+}
+#page-products-tera #navigation ul {
+	background-image: url(../images/logo_nano_tera.gif);
+}
+#page-products-nova #navigation ul {
+	background-image: url(../images/logo_nano_nova.gif);
+}
+#page-products-giga #navigation ul {
+	background-image: url(../images/logo_nano_giga.gif);
+}
+#page-products-peta #navigation ul {
+	background-image: url(../images/logo_nano_peta.gif);
+}
+#navigation ul li {
+	background-color: #FDFFF2;
+	margin: 0 9px;
+}
+#navigation ul li a {
+	background-color: #9AA94E;
+	color: #FFFFFF;
+	display: block;
+	font-size: 1.2em;
+	height: 16px;
+	letter-spacing: -1px;
+	margin: 1px 0 0 0;
+	overflow: hidden;
+	padding: 1px 0 1px 12px;
+	position: relative;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 148px;
+}
+#navigation ul li#news a, #navigation ul li a:hover {
+	background-color: #FDFFF2;
+	color: #7E8750;
+}
+#navigation ul li#news {
+	margin-bottom: 6px;
+}
+#navigation ul li a span {
+	background: transparent url(../images/menu.png) no-repeat 0 0;
+	cursor: pointer;
+	display: block;
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	width: 160px;
+	z-index: 50;
+}
+#page-products-tera #navigation ul {
+	background-color: #901019;
+}
+#page-products-tera #navigation ul li a span {
+	background-image: url(../images/products_tera_menu.png);
+}
+#page-products-nova #navigation ul {
+	background-color: #00A6DC;
+}
+#page-products-nova #navigation ul li a span {
+	background-image: url(../images/products_nova_menu.png);
+}
+#page-products-giga #navigation ul {
+	background-color: #CAC19C;
+}
+#page-products-giga #navigation ul li a span {
+	background-image: url(../images/products_giga_menu.png);
+}
+#page-products-peta #navigation ul {
+	background-color: #D27D32;
+}
+#page-products-peta #navigation ul li a span {
+	background-image: url(../images/products_peta_menu.png);
+}
+/* normal state */
+#navigation ul li#about a span {
+	background-position: 0 -22px;
+}
+#navigation ul li#products a span {
+	background-position: 0 -41px;
+}
+#navigation ul li#portfolio a span {
+	background-position: 0 -60px;
+}
+#navigation ul li#contact a span {
+	background-position: 0 -79px;
+}
+/* hover state */
+#navigation ul li#news a:hover span {
+	background-position: 0 -115px;
+}
+#navigation ul li#about a:hover span {
+	background-position: 0 -137px;
+}
+#navigation ul li#products a:hover span {
+	background-position: 0 -156px;
+}
+#navigation ul li#portfolio a:hover span {
+	background-position: 0 -175px;
+}
+#navigation ul li#contact a:hover span {
+	background-position: 0 -194px;
+}
+/* active state */
+#page-news #navigation ul li#news a span {
+	background-position: 0 -230px;
+}
+#page-about #navigation ul li#about a span {
+	background-position: 0 -252px;
+}
+#page-products #navigation ul li#products a span,
+#page-products-tera #navigation ul li#products a span,
+#page-products-nova #navigation ul li#products a span,
+#page-products-giga #navigation ul li#products a span,
+#page-products-peta #navigation ul li#products a span {
+	background-position: 0 -271px;
+}
+#page-portfolio #navigation ul li#portfolio a span {
+	background-position: 0 -290px;
+}
+#page-contact #navigation ul li#contact a span {
+	background-position: 0 -309px;
+}
