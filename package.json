@@ -1,23 +1,18 @@
 {
-    "name": "nano",
-    "title": "Nano",
-    "description": "A university project.",
-    "author": "Trevor Morris",
-    "version": "1.0.0",
+    "name": "project_name",
+    "title": "Project Name",
+    "description": "Project Description.",
     "private": true,
     "scripts": {
         "start": "docker-compose -f ./docker-compose.yaml up -d",
-        "stop": "docker stop trovster_nano",
-        "remove": "docker rm trovster_nano",
-        "build": "snap http://127.0.0.1:8001 -o www",
+        "stop": "docker stop trovster_nano trovster_nano_mysql",
+        "remove": "docker rm trovster_nano trovster_nano_mysql",
+        "prebuild": "npm run start",
+        "build": "snap http://127.0.0.1:8007 -o www && cp CNAME ./www/",
         "deploy": "push-dir --dir=www --branch=gh-pages"
     },
     "devDependencies": {
         "@remy/snap": "^1.1.1",
         "push-dir": "^0.4.1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/trovster/nano.trovster.com"
     }
 }
