@@ -1,5 +1,10 @@
 RewriteEngine On
-RewriteRule ^index\.php$ - [L]
+RewriteRule ^(portfolio/)([^/]+)/?$ /index.php?section=$1&services=$2 [L,NC]
+
+RewriteRule ^(products/)([^/]+)/([^/]+)/?$ /index.php?section=$1&products=$2&line=$3 [L,NC]
+RewriteRule ^(products/)([^/]+)/?$ /index.php?section=$1&products=$2 [L,NC]
+RewriteRule ^(2023-02-20)$ /index.php?date=$1 [L,NC]
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule (.+) /index.php?section=$1 [L]
+RewriteRule (.+) /index.php?section=$1 [L,NC]
