@@ -251,7 +251,7 @@ h3, h4, #content div p.date {
 	margin: -20px 13px 0 0;
 	padding-bottom: 20px;
 	position: absolute;
-	right: -3px;
+	right: 4px;
 }
 #product_navigation li {
 	float: left;
@@ -264,7 +264,7 @@ h3, h4, #content div p.date {
 	width: 66px;
 }
 #product_navigation li#demo a {
-	width: 40px;
+	width: 37px;
 }
 #product_navigation li a span {
 	background: transparent url(../images/products_tera_navigation.png) no-repeat -269px -9px;
